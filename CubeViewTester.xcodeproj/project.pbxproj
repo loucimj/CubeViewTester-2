@@ -36,6 +36,7 @@
 		41F8801F1E4F456600A48780 /* SF-UI-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 41F8800A1E4F456600A48780 /* SF-UI-Text-RegularItalic.otf */; };
 		41F880201E4F456600A48780 /* SF-UI-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 41F8800B1E4F456600A48780 /* SF-UI-Text-Semibold.otf */; };
 		41F880211E4F456600A48780 /* SF-UI-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 41F8800C1E4F456600A48780 /* SF-UI-Text-SemiboldItalic.otf */; };
+		41F880231E4F4BE700A48780 /* UIView+MaskGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F880221E4F4BE700A48780 /* UIView+MaskGradient.swift */; };
 		8E499C7E1D9BEA8900B5737B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E499C7D1D9BEA8900B5737B /* AppDelegate.swift */; };
 		8E499C801D9BEA8900B5737B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E499C7F1D9BEA8900B5737B /* ViewController.swift */; };
 		8E499C831D9BEA8900B5737B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E499C811D9BEA8900B5737B /* Main.storyboard */; };
@@ -75,6 +76,7 @@
 		41F8800A1E4F456600A48780 /* SF-UI-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-RegularItalic.otf"; sourceTree = "<group>"; };
 		41F8800B1E4F456600A48780 /* SF-UI-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Semibold.otf"; sourceTree = "<group>"; };
 		41F8800C1E4F456600A48780 /* SF-UI-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		41F880221E4F4BE700A48780 /* UIView+MaskGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+MaskGradient.swift"; sourceTree = "<group>"; };
 		8E499C7A1D9BEA8900B5737B /* CubeViewTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CubeViewTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E499C7D1D9BEA8900B5737B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E499C7F1D9BEA8900B5737B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				41F87FF51E4D5AB100A48780 /* UIView+ImageRendering.swift */,
 				03AD06601E4CDD53007CBCD1 /* EvaluationView.xib */,
 				03AD06651E4CEA96007CBCD1 /* UIView+NibLoable.swift */,
+				41F880221E4F4BE700A48780 /* UIView+MaskGradient.swift */,
 				03AD06671E4CF0BD007CBCD1 /* OHCubeView+Addons.swift */,
 				41F87FF71E4F456600A48780 /* Fonts */,
 			);
@@ -290,6 +293,7 @@
 				0325B10B1E4CCE08007537A7 /* CosmosRatingView.swift in Sources */,
 				03AD06611E4CDD53007CBCD1 /* EvaluationView.swift in Sources */,
 				8E499C7E1D9BEA8900B5737B /* AppDelegate.swift in Sources */,
+				41F880231E4F4BE700A48780 /* UIView+MaskGradient.swift in Sources */,
 				41F87FF41E4D586C00A48780 /* UIImage+ColorAnalysis.swift in Sources */,
 				03AD06681E4CF0BD007CBCD1 /* OHCubeView+Addons.swift in Sources */,
 				0307E8701E4D3B97008678CD /* OHCubeView.swift in Sources */,

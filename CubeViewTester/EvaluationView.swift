@@ -39,13 +39,23 @@ import UIKit
         starsRate.rating = person.rate
         titleView.text = person.name
         
-        print(CGRect(x: 0, y: backgroundImage.frame.height*0.8, width: backgroundImage.frame.width, height: backgroundImage.frame.height*0.15))
+        let rect = CGRect(x: image!.size.width * 0.25, y: image!.size.height*0.60, width: image!.size.width * 0.5, height: image!.size.height*0.3)
+        print()
         
         
-        if let imageAnalysis = image?.cropUsingRect(CGRect(x: 80, y: image!.size.height*0.75, width: 200, height: image!.size.height*0.2)) {
-            let imageColors = imageAnalysis.getColors() 
-            starsRate.emptyBorderColor = imageColors.detailColor
-            titleView.textColor = imageColors.detailColor
+        if let imageAnalysis = image?.cropUsingRect(rect) {
+            let imageColors = imageAnalysis.getColors()
+            
+            if imageColors.detailColor.isContrastingColor(compareColor: imageColors.backgroundColor) {
+                starsRate.emptyBorderColor = imageColors.detailColor
+                titleView.textColor = imageColors.detailColor
+            } else if UIColor.white.isContrastingColor(compareColor: imageColors.backgroundColor) {
+                starsRate.emptyBorderColor = UIColor.white
+                titleView.textColor = UIColor.white
+            } else {
+                starsRate.emptyBorderColor = UIColor.black
+                titleView.textColor = UIColor.black
+            }
         } else {
             starsRate.emptyBorderColor = UIColor.white
             titleView.textColor = UIColor.white
